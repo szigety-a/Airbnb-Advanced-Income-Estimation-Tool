@@ -1,0 +1,34 @@
+Summary of Results
+
+The aim of this project was to create a model to reasonably predict the income potential of a hypothetical Airbnb listing based on a number of different attributes. For demonstration purposes, this model operates based on the maximum number of guests, combined with five different features:
+
+Cable TV
+Dryer
+Dedicated Workspace
+Indoor Fireplace
+Wi-Fi
+The practical application of this analysis is to aid potential Airbnb hosts in determining which factors would produce the most significant change in their expected financial return. Utilizing linear regression, the model is tested to predict the estimated income of listings in the Boston area within 1% accuracy based on these six combined criteria.
+
+The estimated income calculation utilizes assumptions based on the following sources:
+
+Average Estimated Stay: 4 nights, based on data available from Airbnb's Economic Impact.
+Average Review Rate: 72%, as stated by Airbnb CEO Brian Chesky (Data Assumptions).
+The tool is designed to be as user-friendly as possible, featuring a graphical user interface (GUI) with prompts that allow an estimate to be created for a listing with any combination of these variables. Perhaps most useful are the feature importance values derived from this trained model, providing specific insights into the dollar value of each feature. Additionally, the program can be easily modified to assess the importance of other amenities such as "Air Conditioning," a "Microwave," or a "Coffee Maker" by altering specific sections in the code.
+
+For the six factors tested in this implementation, the feature importance was as follows:
+
+Number of Guests
+Impact: Additional $869.06 yearly per guest that can be accommodated.
+Cable TV
+Impact: Additional $426.66 yearly by its inclusion.
+Dryer
+Impact: Additional $627.30 yearly by its inclusion.
+Dedicated Workspace
+Impact: Additional $4,291.07 yearly by its inclusion.
+Indoor Fireplace
+Impact: Additional $333.30 yearly by its inclusion.
+Wi-Fi
+Impact: Additional $6,222.97 yearly by its inclusion.
+From this data, we can determine that Wi-Fi and having a dedicated workspace produce a significantly greater increase in the overall income of a listing than the other factors, which is perhaps unsurprising in today's digital age. The data suggests that additions such as a sleeper sofa (to increase guest capacity), cable TV, and a dryer could be worthwhile investments if the owner can add these amenities at a reasonable cost. Guests, however, seem to be less influenced by the presence of an indoor fireplace despite Boston's cold winters, indicating that investing in this feature may not be a prudent decision.
+
+Overall, the framework demonstrated in this example shows the potential of this method for aiding hosts in making financial decisions regarding upgrading or purchasing an Airbnb property. This model could be easily trained for other cities and criteria, suggesting promising potential for future use beyond this specific case.
